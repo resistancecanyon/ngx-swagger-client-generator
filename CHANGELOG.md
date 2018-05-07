@@ -2,6 +2,73 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+# 3.1.0 (2018-05-07)
+
+
+### Bug Fixes
+
+* module template file ([8f813b6](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/8f813b6))
+* **models:** enum property names same as values ([7a0b171](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/7a0b171)), closes [#18](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/18)
+* Object.entries polyfill ([4a3708f](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/4a3708f))
+* **api-client:** array method parameters and headers appended ([34ded75](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/34ded75)), closes [#36](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/36)
+* **api-client:** basic types regex checks word boundaries ([f588fed](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/f588fed)), closes [#44](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/44)
+* **api-client:** File, Blob, Date and Object types are not imported from models ([37e358b](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/37e358b)), closes [#27](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/27)
+* **api-client:** form parameter used as body in request ([ce9f124](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/ce9f124)), closes [#40](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/40)
+* **api-client:** models are not imported if there are none ([42cf4c0](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/42cf4c0)), closes [#31](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/31)
+* **generator:** dash case strings with abbreviations ([6f5c1f0](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/6f5c1f0)), closes [#10](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/10)
+* **generator:** recursive import ([93d1518](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/93d1518)), closes [#11](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/11)
+* **imports:** duplicate imports filtered ([0944bc9](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/0944bc9)), closes [#1](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/1)
+* **options:** default and overriding options assigning ([ceed19f](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/ceed19f))
+* **parser:** empty or native types parameters won't be generated into models ([ff55939](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/ff55939))
+* **parser:** interface properties were skipped during generation ([3e694ad](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/3e694ad))
+* **tslint:** disabled warnings ([734600e](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/734600e))
+* **types:** http options ([74c53a4](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/74c53a4)), closes [#15](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/15)
+
+
+### Features
+
+* basic types corrections ([e2fc5fc](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/e2fc5fc))
+* **domain:** relative path instead of localhost ([e19fffe](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/e19fffe))
+* first working version of rewrite ([30c84b5](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/30c84b5))
+* **api-client:** create output dir even if path does not exists ([8ff9be8](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/8ff9be8)), closes [#34](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/34)
+* **api-client:** method names with underscore converted to camelCase ([b09a679](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/b09a679)), closes [#37](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/37)
+* **api-client:** method parameters nested to args object ([efaca5b](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/efaca5b)), closes [#8](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/8)
+* **api-client:** models imported as module ([3492d8f](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/3492d8f)), closes [#22](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/22)
+* **api-client:** optional param skipped if not in args ([135db91](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/135db91))
+* **api-client:** reference parameters are dereferenced ([0a0de44](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/0a0de44))
+* **api-client:** referenced method parameters generated and used ([0e26c53](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/0e26c53))
+* **api-client:** support for head, options and patch http methods ([bd240f5](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/bd240f5))
+* **api-client:** support for optional method parameters ([9d0cedc](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/9d0cedc)), closes [#8](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/8)
+* **api-client:** when no operation id, method names generated from path and method type ([4afcdbc](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/4afcdbc))
+* **enums:** numeric enums, using keys from description ([45bb096](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/45bb096)), closes [#28](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/28)
+* **generator:** able to generate enums ([eeb8c00](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/eeb8c00)), closes [#2](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/2)
+* npm run generate ([22b9fdb](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/22b9fdb))
+* **method:** params and headers setting ([ac29c36](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/ac29c36)), closes [#14](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/14)
+* **methods:** low camelCase ([5e0a45c](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/5e0a45c))
+* **methods:** naming ([bfd2c97](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/bfd2c97))
+* **module:** API client exported as module ([7eaf673](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/7eaf673)), closes [#23](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/23)
+* **parser:** interface property type improvements, including nested array types ([c70d2a3](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/c70d2a3)), closes [#35](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/35)
+* **type-names:** duplicate words in type names ([da1a9e8](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/da1a9e8)), closes [#12](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/12)
+* **type-names:** omitted unnecessary type naming postfix ([baefa8f](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/baefa8f)), closes [#9](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/9)
+* http request options ([bb8c250](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/bb8c250)), closes [#4](https://github.com/resistancecanyon/ngx-swagger-client-generator/issues/4)
+* method type and other improvements ([8313cb4](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/8313cb4))
+* model naming ([6b7d493](https://github.com/resistancecanyon/ngx-swagger-client-generator/commit/6b7d493))
+
+
+### BREAKING CHANGES
+
+* **module:**   - renamed to APIClient
+  - domain and configuration are now provided using `.forRoot` method
+  ```
+  APIClientModule.forRoot({
+    domain: 'https://api.url',
+  }),
+  ```
+  - cli command renamed to `api-client-generator`
+
+
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://github.com/flowup/api-client-generator/compare/3.0.0-alpha.1...3.0.3) (2018-04-06)
 
