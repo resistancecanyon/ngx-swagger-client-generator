@@ -1,13 +1,13 @@
 {
-  "name": "api-client-generator",
-  "version": "3.0.3",
+  "name": "ngx-swagger-client-generator",
+  "version": "3.0.5",
   "description": "Angular REST API client generator from Swagger YAML or JSON file with camel case settigs",
-  "homepage": "https://github.com/flowup/api-client-generator/blob/master/README.md",
+  "homepage": "https://github.com/resistancecanyon/ngx-swagger-client-generator/blob/master/README.md",
   "main": "src/main.ts",
   "author": {
-    "name": "FlowUp",
-    "email": "hello@flowup.cz",
-    "url": "https://flowup.cz"
+    "name": "resistancecanyon",
+    "email": "resistancecanyon@gmail.com",
+    "url": "https://github.com/resistancecanyon"
   },
   "bin": {
     "api-client-generator": "./dist/main.js"
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:flowup/api-client-generator.git"
+    "url": "https://github.com/resistancecanyon/ngx-swagger-client-generator"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
