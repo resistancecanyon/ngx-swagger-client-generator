@@ -29,6 +29,17 @@ export class APIClient {
       this.domain = domain;
     }
 
+    /* 
+    options.headersConfig will always replace headers
+    options.headersConfig added as part of and issue in ng build --prod 
+    aot mode is failing when we try to send new HttpHeaders() as part of module config.
+    */
+    if(options && options.headersConfig) {
+      options.headers = new HttpHeaders(options.headersConfig);
+      // removing as it's not part of HttpClient
+      delete options.headersConfig;
+    };
+    
     this.options = {
       headers: options && options.headers ? options.headers : new HttpHeaders(),
       params: options && options.params ? options.params : new HttpParams(),

@@ -12,6 +12,7 @@ export { APIClient } from './api-client.service';
 
 export interface HttpOptions {
   headers?: HttpHeaders, // provided headers will be used as default for each request
+  headersConfig?: string | { [name: string]: string | string[] } //used for config of .headers in aot mode
   params?: HttpParams,   // provided params will be used as default for each request
   reportProgress?: boolean,
   withCredentials?: boolean,
